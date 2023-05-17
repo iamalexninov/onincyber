@@ -52,10 +52,7 @@ button {
 }
 
 a {
-  font-size: var.$link-mobile;
-  @include media.desktop {
-    font-size: var.$link-desktop;
-  }
+  font-size: var.$link;
 }
 
 input {

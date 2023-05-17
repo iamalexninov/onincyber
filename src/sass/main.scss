@@ -7,14 +7,3 @@
 
 @forward "./components/buttons";
 @forward "./components/inputs";
-
-@use "./components/buttons" as btn;
-@use "./components/inputs" as input;
-
-button {
-  @include btn.button();
-}
-
-input {
-  @include input.field();
-}

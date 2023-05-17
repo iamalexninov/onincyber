@@ -1,10 +1,15 @@
-import './sass/main.scss';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import "./sass/main.scss";
+
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App">
-        <span className='subtitle'>why choose us?</span>
-    </div>
+    <Router>
+        <Navbar />
+        <Routes>{/* <Route path='/' element={<Home/>}/> */}</Routes>
+    </Router>
   );
 }
 

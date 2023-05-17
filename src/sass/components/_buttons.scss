@@ -8,8 +8,9 @@
   color: var.$white-light;
   background-color: var.$primary-light;
   font-size: var.$btn;
+  transition: var.$transition-out-3;
   &:hover {
     background-color: var.$primary-darker;
-    transition: all 0.3s ease-in;
+    transition: var.$transition-in-3;
   }
 }

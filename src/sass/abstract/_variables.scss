@@ -23,8 +23,7 @@ $fs-p-desktop: 1.25rem;
 
 $btn: 1rem;
 $input: 1rem;
-$link-mobile: 1rem;
-$link-desktop: 1.15rem;
+$link: 1.10rem;
 $subtitle: 1rem;
 
 $fw-700: 700;
@@ -37,3 +36,10 @@ $ff-body: "Poppins", sans-serif;
 
 // Btn-border-radius
 $border-radius: 5px;
+
+$box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+$transition-in-3: all 0.3s ease-in;
+$transition-out-3: all 0.3s ease-out;
+$transition-in-5: all 0.5s ease-in;
+$transition-out-5: all 0.5s ease-in;
