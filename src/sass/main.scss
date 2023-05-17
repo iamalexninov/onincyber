@@ -1,13 +1,17 @@
-@forward './abstract/variables';
-@forward './abstract/breakpoints';
-
+@forward "./abstract/variables";
+@forward "./abstract/breakpoints";
 @forward "./base/reset";
-@forward './base/typography';
+@forward "./base/typography";
+@forward "./components/buttons";
+@forward "./components/inputs";
 
-button{
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 10px 20px;
-    background-color: #0fd6b9;
-    font-size: 1rem;
+@use "./components/buttons" as btn;
+@use "./components/inputs" as input;
+
+button {
+  @include btn.button();
+}
+
+input {
+  @include input.field();
 }

@@ -1,0 +1,15 @@
+@use "../abstract/variables" as var;
+
+@mixin button() {
+  cursor: pointer;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  border-radius: var.$border-radius;
+  color: var.$white-light;
+  background-color: var.$primary-light;
+  font-size: var.$btn;
+  &:hover {
+    background-color: var.$primary-darker;
+    transition: all 0.3s ease-in;
+  }
+}

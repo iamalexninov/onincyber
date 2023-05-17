@@ -17,8 +17,7 @@ a,
 img,
 span,
 input,
-button,
-ion-icon {
+button {
   display: block;
 }
 
@@ -37,22 +36,6 @@ input,
 button {
   background: none;
   border: none;
-}
-
-input {
-  width: 100%;
-}
-
-button {
-  cursor: pointer;
-}
-
-ion-icon {
-  pointer-events: none;
-}
-
-address {
-  font-style: normal;
 }
 
 html {

@@ -45,7 +45,6 @@ button,
 a {
   font-family: var.$ff-body;
   font-weight: var.$fw-700;
-  color: var.$white-light;
 }
 
 button {
@@ -57,4 +56,9 @@ a {
   @include media.desktop {
     font-size: var.$link-desktop;
   }
+}
+
+input {
+  font-size: var.$input;
+  font-family: var.$ff-body;
 }

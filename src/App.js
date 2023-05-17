@@ -5,6 +5,10 @@ function App() {
     <div className="App">
       <h2>title</h2>
       <p>paragraph</p>
+
+      <input type="text" placeholder='sample text'/>
+
+      <button>cta</button>
     </div>
   );
 }
