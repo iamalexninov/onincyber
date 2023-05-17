@@ -1,0 +1,17 @@
+@use "../abstract/variables" as var;
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-family: var.$ff-body;
+  font-weight: var.$fw-700;
+  color: var.$primary-light;
+  font-size: var.$subtitle;
+  text-transform: uppercase;
+  &:hover {
+    color: var.$primary-darker;
+  }
+}
