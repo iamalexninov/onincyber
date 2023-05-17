@@ -1,9 +1,12 @@
+@use '../abstract/variables' as var;
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: inherit;
 }
 
 li {
@@ -34,7 +37,6 @@ input,
 button {
   background: none;
   border: none;
-  font: inherit;
 }
 
 input {
@@ -54,17 +56,12 @@ address {
 }
 
 html {
-  font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
-  font-size: 1.6rem;
-  line-height: 1.7;
-}
-
-body.nav-active {
-  overflow: hidden;
+  background-color: var.$bg-dark;
+  color: var.$white;
 }
 
 ::-webkit-scrollbar {
