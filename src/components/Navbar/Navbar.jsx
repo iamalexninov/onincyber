@@ -6,11 +6,12 @@ import {
 } from "react-icons/ai";
 
 import styles from "./Navbar.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [click, setClick] = useState(false);
+  const navRef = useRef();
 
   const handleOpen = () => {
     setClick(true);
@@ -35,13 +36,28 @@ const Navbar = () => {
     };
   }, []);
 
+
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setClick(false);
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
   return (
     <header
       className={
         scrollPosition > 0 ? `${styles.header} ${styles.active}` : styles.header
       }
     >
-      <div className={`wrapper ${styles.header__container}`}>
+      <div className={`wrapper ${styles.header__container}`} ref={navRef}>
         <Link to="/" className="logo">
           OninCyber
         </Link>
@@ -86,14 +102,8 @@ const Navbar = () => {
             >
               <Link to="/blog">Blog</Link>
             </li>
-            <li
-              className={styles.header__container__navbar__list__item}
-              onClick={hadnleClose}
-            >
-              <Link to="/contact">Contact</Link>
-            </li>
             <button className={styles.header__container__navbar__list__btn}>
-              contact us
+              <Link to="/contact">contact us</Link>
             </button>
           </ul>
           <div className={styles.header__container__navbar__bottom}>

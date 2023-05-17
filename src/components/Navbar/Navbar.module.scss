@@ -24,7 +24,7 @@
       position: absolute;
       top: 0;
       left: -100%;
-      width: 290px;
+      width: 220px;
       height: 100vh;
       background-color: var.$bg-light;
       transition: var.$transition-out-5;
@@ -32,7 +32,10 @@
         left: 0;
         transition: var.$transition-in-5;
       }
-      @include media.desktop {
+      @include media.mobile {
+        width: 280px;
+      }
+      @include media.tablet {
         all: unset;
       }
       &__top {
@@ -54,7 +57,7 @@
         top: 45%;
         left: 20px;
         transform: translateY(-45%);
-        @include media.desktop {
+        @include media.tablet {
           all: unset;
           display: flex;
           align-items: center;
@@ -62,7 +65,7 @@
         }
         &__item {
           margin-bottom: 20px;
-          @include media.desktop {
+          @include media.tablet {
             margin-bottom: 0px;
           }
           transition: var.$transition-out-3;
@@ -83,7 +86,7 @@
       }
       &__top,
       &__bottom {
-        @include media.desktop {
+        @include media.tablet {
           display: none;
         }
       }
@@ -91,7 +94,7 @@
     &__open {
       font-size: 1.75rem;
       cursor: pointer;
-      @include media.desktop {
+      @include media.tablet {
         display: none;
       }
     }
