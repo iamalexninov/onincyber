@@ -1,0 +1,60 @@
+@use "../abstract/breakpoints" as media;
+@use "../abstract/variables" as var;
+
+h1 {
+  text-transform: uppercase;
+  font-size: var.$fs-h1-mobile;
+  @include media.desktop {
+    font-size: var.$fs-h1-desktop;
+  }
+}
+
+h2 {
+  font-size: var.$fs-h2-mobile;
+  @include media.desktop {
+    font-size: var.$fs-h2-desktop;
+  }
+}
+
+h3 {
+  font-size: var.$fs-h3-mobile;
+  @include media.desktop {
+    font-size: var.$fs-h3-desktop;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var.$fw-700;
+  font-family: var.$ff-heading;
+  color: var.$white-light;
+}
+
+p {
+  font-family: var.$ff-body;
+  font-weight: var.$fw-300;
+  font-size: var.$fs-p-mobile;
+  color: var.$white-dark;
+  @include media.desktop {
+    font-size: var.$fs-p-desktop;
+  }
+}
+
+button,
+a {
+  font-family: var.$ff-body;
+  font-weight: var.$fw-700;
+  color: var.$white-light;
+}
+
+button {
+  font-size: var.$btn;
+}
+
+a {
+  font-size: var.$link-mobile;
+  @include media.desktop {
+    font-size: var.$link-desktop;
+  }
+}

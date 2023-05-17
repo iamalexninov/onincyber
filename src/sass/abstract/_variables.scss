@@ -1,21 +1,37 @@
+// [Colors]
+
 $primary-light: #0fd6b9;
 $primary-darker: #0c9783;
 $bg-dark: #00152e;
 $bg-light: #001f45;
-$white: #fff;
+$white-light: #fff;
+$white-dark: hsl(0, 3%, 86%);
 $black: #000000;
 $grey: #495c72;
 
+// [Typography]
+
 $fs-h1-mobile: 2rem;
 $fs-h2-mobile: 1.75rem;
-$fs-h3-mobile:1.5rem;
+$fs-h3-mobile: 1.5rem;
 $fs-p-mobile: 1rem;
 
-// $fs-h1-desktop: 
-// $fs-h2-desktop:
-// $fs-h3-desktop:
-// $fs-p-desktop:
+$fs-h1-desktop: 3rem;
+$fs-h2-desktop: 2.75rem;
+$fs-h3-desktop: 2.5rem;
+$fs-p-desktop: 1.25rem;
 
+$btn: 1rem;
+$link-mobile: 1rem;
+$link-desktop: 1.15rem;
 
-$ff-primary: "Playfair Display", serif;
-$ff-secondary: "Poppins", sans-serif;
+$fw-700: 700;
+$fw-300: 300;
+
+$ff-heading: "Roboto", sans-serif;
+$ff-body: "Poppins", sans-serif;
+
+// [Margins]
+
+// Btn-border-radius
+$border-radius: 10px;

@@ -1,2 +1,13 @@
 @forward './abstract/variables';
+@forward './abstract/breakpoints';
+
 @forward "./base/reset";
+@forward './base/typography';
+
+button{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #0fd6b9;
+    font-size: 1rem;
+}
