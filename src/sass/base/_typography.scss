@@ -36,6 +36,7 @@ p {
   font-weight: var.$fw-300;
   font-size: var.$fs-p-mobile;
   color: var.$white-dark;
+  word-break: break-all;
   @include media.desktop {
     font-size: var.$fs-p-desktop;
   }

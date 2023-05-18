@@ -1,13 +1,13 @@
 // [Colors]
 
-$primary-light: #0fd6b9;
-$primary-darker: #0c9783;
-$bg-dark: #00152e;
-$bg-light: #001f45;
-$white-light: #fff;
+$primary-light: hsl(171, 87%, 45%);
+$primary-darker: hsl(171, 85%, 32%);
+$bg-dark: hsl(213, 100%, 9%);
+$bg-light: hsl(213, 100%, 14%);
+$white-light: hsl(0, 0%, 100%);
 $white-dark: hsl(0, 3%, 86%);
-$black: #000000;
-$grey: #495c72;
+$black: hsl(0, 0%, 0%);
+$grey: hsl(212, 22%, 37%);
 
 // [Typography]
 
@@ -23,7 +23,7 @@ $fs-p-desktop: 1.25rem;
 
 $btn: 1rem;
 $input: 1rem;
-$link: 1.10rem;
+$link: 1.1rem;
 $subtitle: 1rem;
 
 $fw-700: 700;
@@ -33,6 +33,8 @@ $ff-heading: "Roboto", sans-serif;
 $ff-body: "Poppins", sans-serif;
 
 // [Margins]
+$mb-10: 10px;
+$mb-30: 30px;
 
 // Btn-border-radius
 $border-radius: 5px;

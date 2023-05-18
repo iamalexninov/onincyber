@@ -1,0 +1,44 @@
+@use "../../../sass/abstract/variables" as var;
+@use "../../../sass/abstract/breakpoints" as media;
+
+@use "../../../sass/components/buttons" as btn;
+
+.hero {
+  background-image: url("../../../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsla(213, 100%, 9%, 1);
+  background-blend-mode: overlay;
+  padding-block: 100px 40px;
+  @include media.tablet {
+    padding-block: 150px 80px;
+  }
+  &__content {
+    @include media.mobile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    &__text {
+      margin-bottom: var.$mb-30;
+      max-width: 400px;
+      &__h1 {
+        margin-bottom: var.$mb-10;
+        &__span {
+          color: var.$primary-light;
+        }
+      }
+      &__paragraph {
+        margin-bottom: var.$mb-30;
+      }
+      &__btn {
+        @include btn.button();
+      }
+    }
+    &__poster {
+      &__img {
+        width: 100%;
+      }
+    }
+  }
+}

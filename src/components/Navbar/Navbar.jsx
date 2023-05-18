@@ -21,6 +21,7 @@ const Navbar = () => {
     setClick(false);
   };
 
+  // hide mobile navbar when scroll
   useEffect(() => {
     const handleScroll = () => {
       setClick(false);
@@ -36,7 +37,7 @@ const Navbar = () => {
     };
   }, []);
 
-
+  // hide mobile navbar when click outside of it
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if (navRef.current && !navRef.current.contains(e.target)) {
@@ -58,7 +59,7 @@ const Navbar = () => {
       }
     >
       <div className={`wrapper ${styles.header__container}`} ref={navRef}>
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" onClick={hadnleClose}>
           OninCyber
         </Link>
         <nav
@@ -69,7 +70,7 @@ const Navbar = () => {
           }
         >
           <div className={styles.header__container__navbar__top}>
-            <Link to="/" className="logo">
+            <Link to="/" className="logo" onClick={hadnleClose}>
               OninCyber
             </Link>
             <Close
@@ -102,9 +103,11 @@ const Navbar = () => {
             >
               <Link to="/blog">Blog</Link>
             </li>
-            <button className={styles.header__container__navbar__list__btn}>
-              <Link to="/contact">contact us</Link>
-            </button>
+            <Link to="/contact">
+              <button className={styles.header__container__navbar__list__btn}onClick={hadnleClose}>
+                contact us
+              </button>
+            </Link>
           </ul>
           <div className={styles.header__container__navbar__bottom}>
             <p>onincyber@gmail.com</p>

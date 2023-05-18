@@ -1,9 +1,11 @@
-import React from 'react'
+import HomeHeroSubsection from "./Home-hero-subsection/HomeHeroSubsection";
 
 const Home = () => {
   return (
-    <div></div>
-  )
-}
+    <main>
+      <HomeHeroSubsection />
+    </main>
+  );
+};
 
-export default Home
+export default Home;
