@@ -1,0 +1,57 @@
+@use "../../sass/abstract/breakpoints" as media;
+@use "../../sass/abstract/variables" as var;
+
+.footer {
+  padding-block: 30px;
+  background-color: var.$bg-light;
+  &__content {
+    &__top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      color: var.$white-light;
+      border-bottom: 1px solid var.$primary-light;
+      padding-bottom: 20px;
+      @include media.tablet {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      &__logo {
+        &__p {
+          max-width: 250px;
+        }
+      }
+      &__nav li,
+      &__terms li,
+      &__support li,
+      &__social li {
+        &:first-child {
+          margin-bottom: var.$mb-10;
+        }
+      }
+    }
+    &__bottom {
+      padding-top: 20px;
+      @include media.tablet {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &__p {
+        margin-bottom: var.$mb-10;
+        @include media.tablet {
+          margin-bottom: 0;
+        }
+      }
+      &__social {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        &__item {
+          color: var.$primary-light;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
