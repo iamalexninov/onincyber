@@ -1,6 +1,5 @@
 import styles from "./AboutUs.module.scss";
 
-import pic from "../../../images/Home/welcome.jpg";
 import { Link } from "react-router-dom";
 import { HiArrowSmRight as Arrow } from "react-icons/hi";
 import { GiWarlockEye as Lock,GiEarthAmerica as Earth } from "react-icons/gi";

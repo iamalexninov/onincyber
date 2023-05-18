@@ -1,5 +1,4 @@
-// [Colors]
-
+// Colors
 $primary-light: hsl(171, 87%, 45%);
 $primary-darker: hsl(171, 85%, 32%);
 $bg-dark: hsl(213, 100%, 9%);
@@ -9,8 +8,7 @@ $white-dark: hsl(0, 3%, 86%);
 $black: hsl(0, 0%, 0%);
 $grey: hsl(212, 22%, 37%);
 
-// [Typography]
-
+// Typography
 $fs-h1-mobile: 2rem;
 $fs-h2-mobile: 1.65rem;
 $fs-h3-mobile: 1.15rem;
@@ -32,17 +30,19 @@ $fw-300: 300;
 $ff-heading: "Roboto", sans-serif;
 $ff-body: "Poppins", sans-serif;
 
-// [Margins]
+// Margins
 $mb-10: 10px;
 $mb-30: 30px;
 $mb-80: 80px;
 $mb-120: 120px;
 
-// Btn-border-radius
+// Border-radius
 $border-radius: 5px;
 
+// Box Shadow
 $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+// Transitions
 $transition-in-3: all 0.3s ease-in;
 $transition-out-3: all 0.3s ease-out;
 $transition-in-5: all 0.5s ease-in;
