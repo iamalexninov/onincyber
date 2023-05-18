@@ -1,0 +1,62 @@
+@use "../../sass/abstract/breakpoints" as media;
+@use "../../sass/abstract/variables" as var;
+@use "../../sass/components/buttons" as btn;
+
+.about {
+  &__content {
+    @include media.tablet {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      gap: 3rem;
+    }
+    &__info {
+      &__h2 {
+        margin-bottom: var.$mb-10;
+      }
+      &__p {
+        margin-bottom: var.$mb-30;
+      }
+      &__list {
+        margin-bottom: var.$mb-30;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        @include media.mobile {
+          flex-direction: row;
+        }
+        &__item {
+          background-color: var.$bg-light;
+          padding: 25px;
+          &__icon {
+            font-size: 2.5rem;
+            text-align: center;
+            width: 100%;
+            color: var.$primary-light;
+            margin-bottom: 15px;
+          }
+          &__h3 {
+            text-align: center;
+            margin-bottom: var.$mb-10;
+          }
+        }
+      }
+      &__btn {
+        margin-bottom: var.$mb-30;
+        @include media.tablet {
+          margin-bottom: 0;
+        }
+        @include btn.button();
+      }
+    }
+    &__img {
+      width: 100%;
+      min-height: 450px;
+      background-image: url("../../images/about-poster.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+  }
+}
