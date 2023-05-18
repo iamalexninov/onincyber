@@ -56,7 +56,8 @@ a {
   font-size: var.$link;
 }
 
-input {
+input,
+textarea {
   font-size: var.$input;
   font-family: var.$ff-body;
 }
