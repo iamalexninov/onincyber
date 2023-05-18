@@ -5,6 +5,7 @@ import Feature from "./Feature/Feature";
 import Stats from "../../components/Stats/Stats";
 import Offer from "../../components/Offer/Offer";
 import FreeTrial from "../../components/FreeTrial/FreeTrial";
+import News from "./News/News";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Stats />
       <Offer />
       <FreeTrial />
+      <News />
     </main>
   );
 };

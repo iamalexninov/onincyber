@@ -1,0 +1,39 @@
+@use "../../../sass/abstract/breakpoints" as media;
+@use "../../../sass/abstract/variables" as var;
+
+.news {
+  &__h2 {
+    margin-bottom: var.$mb-30;
+  }
+  &__list {
+    display: grid;
+    gap: 1rem;
+    @include media.mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media.tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__item {
+      background-color: var.$bg-light;
+      border-radius: 10px;
+      padding: 15px;
+      &__poster {
+        &__img {
+          border-radius: 10px;
+          width: 100%;
+          max-height: 220px;
+        }
+      }
+      &__text {
+        padding: 20px 10px;
+        &__h3 {
+          margin-bottom: var.$mb-10;
+        }
+        &__p{
+          margin-bottom: var.$mb-10;
+        }
+      }
+    }
+  }
+}
