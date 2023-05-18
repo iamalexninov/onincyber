@@ -25,8 +25,20 @@
 }
 
 .section {
-  padding-block: 80px;
+  margin-bottom: var.$mb-80;
   @include media.tablet {
-    padding-block: 120px;
+    margin-bottom: var.$mb-120;
+  }
+}
+
+.read {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var.$primary-light;
+  &:hover {
+    position: relative;
+    right: -10px;
+    color: var.$primary-darker;
   }
 }

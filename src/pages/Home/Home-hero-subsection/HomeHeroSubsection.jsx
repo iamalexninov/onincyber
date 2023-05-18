@@ -3,7 +3,7 @@ import poster from '../../../images/Home/home-hero.png';
 
 const HomeHeroSubsection = () => {
   return (
-    <section className={styles.hero}>
+    <section className={`section ${styles.hero}`}>
       <div className="wrapper">
         <div className={styles.hero__content}>
           <div className={styles.hero__content__text}>
