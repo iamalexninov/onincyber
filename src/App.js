@@ -4,7 +4,7 @@ import "./sass/main.scss";
 
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
-// About Page
+import About from "./pages/About/About";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer/>
     </Router>
