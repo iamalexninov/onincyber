@@ -1,15 +1,15 @@
 @use "../abstract/variables" as var;
-@use '../abstract/breakpoints' as media;
+@use "../abstract/breakpoints" as media;
 
 .wrapper {
   padding-inline: 20px;
-  @include media.desktop{
+  @include media.desktop {
     max-width: 1300px;
     margin: 0 auto;
   }
 }
 
-.logo{
+.logo {
   text-transform: uppercase;
 }
 
@@ -21,5 +21,12 @@
   text-transform: uppercase;
   &:hover {
     color: var.$primary-darker;
+  }
+}
+
+.section {
+  padding-block: 80px;
+  @include media.tablet {
+    padding-block: 120px;
   }
 }

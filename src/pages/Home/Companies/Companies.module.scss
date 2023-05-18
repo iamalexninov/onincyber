@@ -1,0 +1,33 @@
+@use "../../../sass/abstract/variables" as var;
+@use "../../../sass/abstract/breakpoints" as media;
+
+.companies {
+  &__content {
+    &__h2 {
+      text-align: center;
+      margin-bottom: var.$mb-30;
+      &__span {
+        color: var.$primary-light;
+      }
+    }
+    &__items {
+      display: grid;
+      gap: 1.5rem;
+      padding-top: 30px;
+      @include media.mobile {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include media.tablet {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      &__img {
+        cursor: pointer;
+        width: 80%;
+        filter: grayscale(100%);
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+}

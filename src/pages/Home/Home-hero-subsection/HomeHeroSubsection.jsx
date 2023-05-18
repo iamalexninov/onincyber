@@ -1,5 +1,5 @@
 import styles from "./HomeHeroSubsection.module.scss";
-import poster from '../../../images/home-hero.png';
+import poster from '../../../images/Home/home-hero.png';
 
 const HomeHeroSubsection = () => {
   return (
