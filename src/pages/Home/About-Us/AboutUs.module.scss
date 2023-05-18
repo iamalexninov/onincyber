@@ -7,12 +7,9 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    gap: 2rem;
   }
   &__content {
-    @include media.desktop {
-      max-width: 90%;
-      margin: 0 auto;
-    }
     &__h2 {
       margin-bottom: var.$mb-10;
     }
@@ -62,7 +59,7 @@
     background-blend-mode: overlay;
     width: 100%;
     min-height: 500px;
-    @include media.desktop {
+    @include media.largedesktop{
       border-radius: 0px 10px 10px 0px;
     }
   }
