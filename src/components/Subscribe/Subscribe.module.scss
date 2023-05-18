@@ -1,0 +1,33 @@
+@use "../../sass/abstract/variables" as var;
+@use "../../sass/abstract/breakpoints" as media;
+@use "../../sass/components/buttons" as btn;
+@use "../../sass/components/inputs" as input;
+
+.subscribe {
+  &__content {
+    background-color: var.$bg-light;
+    padding-block: 55px;
+    text-align: center;
+    border-radius: 10px;
+    &__h2 {
+      margin-bottom: var.$mb-30;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      @include media.tablet {
+        flex-direction: row;
+      }
+      &__input {
+        width: 200px;
+        @include input.field(var.$bg-light, var.$white-light);
+      }
+      &__btn {
+        @include btn.button();
+      }
+    }
+  }
+}

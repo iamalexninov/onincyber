@@ -6,6 +6,7 @@ import Stats from "../../components/Stats/Stats";
 import Offer from "../../components/Offer/Offer";
 import FreeTrial from "../../components/FreeTrial/FreeTrial";
 import News from "./News/News";
+import Subscribe from "../../components/Subscribe/Subscribe";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Offer />
       <FreeTrial />
       <News />
+      <Subscribe/>
     </main>
   );
 };

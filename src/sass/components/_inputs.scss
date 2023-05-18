@@ -1,13 +1,13 @@
 @use "../abstract/variables" as var;
 
-@mixin field() {
-  padding: 12px;
+@mixin field($color,$bg-color) {
+  padding: 8px 20px;
   outline: none;
   border: 0;
-  color: var.$white-light;
-  background-color: var.$bg-light;
+  color: $color;
+  background-color: $bg-color;
   border-radius: var.$border-radius;
   &::placeholder {
-    color: var.$white-dark;
+    color: $color;
   }
 }
