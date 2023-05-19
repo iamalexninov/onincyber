@@ -1,0 +1,71 @@
+@use "../../sass/abstract/breakpoints" as media;
+@use "../../sass/abstract/variables" as var;
+@use "../../sass/components/buttons" as btn;
+
+.pricing {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    @include media.tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__text {
+      margin-bottom: var.$mb-30;
+      &__h2 {
+        margin-bottom: var.$mb-10;
+      }
+      &__p {
+        margin-bottom: var.$mb-30;
+        min-width: 300px;
+        @include media.tablet{
+            max-width: 450px;
+        }
+      }
+      &__btn {
+        @include btn.button();
+      }
+    }
+    &__plans {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      @include media.mobile {
+        flex-direction: row;
+      }
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 25px;
+        border: 1px solid var.$primary-light;
+        border-radius: 10px;
+        margin-bottom: var.$mb-30;
+        @include media.mobile {
+          margin-bottom: 0;
+        }
+        &__title {
+          margin-bottom: var.$mb-10;
+        }
+        &__price {
+          color: var.$primary-light;
+          margin-bottom: var.$mb-30;
+        }
+        &__list {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          margin-bottom: var.$mb-30;
+        }
+        &__btn {
+          @include btn.button();
+        }
+      }
+    }
+  }
+}

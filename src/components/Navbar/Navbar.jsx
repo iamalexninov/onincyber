@@ -19,6 +19,7 @@ const Navbar = () => {
 
   const hadnleClose = () => {
     setClick(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // hide mobile navbar when scroll
@@ -104,7 +105,10 @@ const Navbar = () => {
               <Link to="/blog">Blog</Link>
             </li>
             <Link to="/contact">
-              <button className={styles.header__container__navbar__list__btn}onClick={hadnleClose}>
+              <button
+                className={styles.header__container__navbar__list__btn}
+                onClick={hadnleClose}
+              >
                 contact us
               </button>
             </Link>
