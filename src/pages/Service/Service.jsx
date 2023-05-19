@@ -2,6 +2,7 @@ import styles from "./Service.module.scss";
 
 import Hero from "../../components/Hero/Hero";
 import Offer from "../../components/Offer/Offer";
+import Testimonials from "../../components/Testimonials/Testimonials";
 import Pricing from "../../components/Pricing/Pricing";
 
 const Service = () => {
@@ -27,8 +28,8 @@ const Service = () => {
         </div>
       </section>
       <Offer />
-      {/* Testimonials */}
-      <Pricing/>
+      <Testimonials />
+      <Pricing />
     </main>
   );
 };

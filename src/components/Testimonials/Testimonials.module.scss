@@ -1,0 +1,16 @@
+@use "../../sass/abstract/variables" as var;
+
+.testimonials {
+  background-attachment: fixed;
+  background-image: url("../../images/testimonials.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(171, 87%, 45%, 0.2);
+  background-blend-mode: overlay;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
