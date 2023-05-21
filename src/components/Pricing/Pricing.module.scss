@@ -19,7 +19,7 @@
       }
       &__p {
         margin-bottom: var.$mb-30;
-        min-width: 300px;
+        min-width: 250px;
         @include media.tablet{
             max-width: 450px;
         }

@@ -18,9 +18,9 @@
     margin-bottom: var.$mb-80;
   }
   &__slider {
-    max-width: 300px;
+    max-width: 220px;
     @include media.tablet {
-      max-width: 500px;
+      max-width: 400px;
     }
     &__review {
       background-color: var.$bg-light;
