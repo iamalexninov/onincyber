@@ -2,7 +2,7 @@
 
 The Cybersecurity website with React and SASS. The primary purpose of this project was to gain knowledge about React, SASS and responsive design. I provide you with a clean design with readable code.
 
-[See the project](onincyber.netlify.app/)
+[See the project](https://onincyber.netlify.app/)
 
 ## **Installation**
 
