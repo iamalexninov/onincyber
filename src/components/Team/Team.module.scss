@@ -23,11 +23,11 @@
           &__img {
             height: 400px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: var.$border-radius-10;
           }
           &__info {
             display: none;
-            border-radius: 10px;
+            border-radius: var.$border-radius-10;
             &.active {
               display: flex;
               flex-direction: column;
