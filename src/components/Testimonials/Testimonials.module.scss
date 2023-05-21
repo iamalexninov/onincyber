@@ -1,4 +1,5 @@
 @use "../../sass/abstract/variables" as var;
+@use "../../sass/abstract/breakpoints" as media;
 
 .testimonials {
   background-attachment: fixed;
@@ -12,5 +13,42 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  padding-block: 50px;
+  &__title {
+    margin-bottom: var.$mb-80;
+  }
+  &__slider {
+    max-width: 300px;
+    @include media.tablet {
+      max-width: 500px;
+    }
+    &__review {
+      background-color: var.$bg-light;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-inline: 20px;
+      &__img {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        margin-bottom: var.$mb-30;
+      }
+      &__p {
+        margin-bottom: var.$mb-10;
+      }
+      &__info {
+        font-size: 1.25rem;
+        @include media.tablet {
+          display: flex;
+          justify-content: center;
+          gap: 0.25rem;
+        }
+        &__name {
+          color: var.$white-dark;
+          font-weight: 900;
+        }
+      }
+    }
+  }
 }
