@@ -9,8 +9,8 @@ The Cybersecurity website with React and SASS. The primary purpose of this proje
 To run this project, follow this steps:
 
 - Close this repository to your local machine.
-- Run **`npm install`** or **`yarn install`** to install all dependencies.
-- Run **`npm start`** or **`yarn start`** to run the project.
+- Run **`npm install`** to install all dependencies.
+- Run **`npm start`** to run the project.
 - Open [http://localhost:3000](http://localhost:3000) to view the project in the browser.
 
 ## Features
